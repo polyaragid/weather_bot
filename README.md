@@ -23,4 +23,6 @@ telegram-api-key="Токен тг бота"
 
 api-key-weather="Токен погоды openweathermap"
 
+admins=[id(int)]
+
 7. Запустить bot.py
