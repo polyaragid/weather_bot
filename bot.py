@@ -20,7 +20,7 @@ async def main():
     dp.include_router(support.router)
 
     # Подключение с настройками: 3 сообщения в 5 секунд, бан на 5 минут
-    #dp.message.middleware(AdvancedAntiSpamMiddleware(limit=3, interval=5, ban_time=300))
+    dp.message.middleware(AdvancedAntiSpamMiddleware(limit=3, interval=5, ban_time=300))
     print("Bot is running...")
     await dp.start_polling(bot)
 
