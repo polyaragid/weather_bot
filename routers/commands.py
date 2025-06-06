@@ -23,8 +23,8 @@ async def start_command(message: Message):
         "/weather - погода\n"
         "/city <city> - выбрать город\n"
         "/favs - города в избранном\n"
-        "/addfav <city> - добавить город в избранном\n"
-        "/delfav <city> - удалить город в избранном\n"
+        "/addfav <city> - добавить город в избранное\n"
+        "/delfav <city> - удалить город из избранного\n"
         "/help- псписок команд\n"
         "/support- поддержка"
     )
