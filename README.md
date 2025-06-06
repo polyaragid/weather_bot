@@ -17,6 +17,7 @@
 6. Вставить туда
 
 telegram-api-key="Токен тг бота"
+
 api-key-weather="Токен погоды openweathermap"
 
 7. Запустить bot.py
