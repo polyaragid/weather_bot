@@ -25,6 +25,6 @@ async def start_command(message: Message):
         "/favs - города в избранном\n"
         "/addfav <city> - добавить город в избранное\n"
         "/delfav <city> - удалить город из избранного\n"
-        "/help- псписок команд\n"
+        "/help- список команд\n"
         "/support- поддержка"
     )
