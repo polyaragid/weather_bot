@@ -17,7 +17,7 @@
 4. Create an Account заполняете данные -> кликаете справа сверху на имя аккаунта(рядом с Support) -> My api keys -> создаёте ключ
 5. Получить токен телеграмм бота в botfather
 6. Создать .env файл в папке внктри проекта config/
-7. Вставить туда
+7. Вставить в .env файл
 
 telegram-api-key="Токен тг бота"
 
@@ -25,4 +25,4 @@ api-key-weather="Токен погоды openweathermap"
 
 admins=[id(int)]
 
-7. Запустить bot.py
+8. Запустить bot.py
