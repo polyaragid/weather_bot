@@ -23,7 +23,6 @@ async def cmd_choose_city(message: Message):
         return await message.reply("Нужно написать название города: /city Санкт-Петербург")
 
     city = parts[1].strip()
-    # опционально можно проверить существование через mal_client.anime_exists
     await choice_storage.choice(message.from_user.id, city)
     await message.reply(f"Город {city} выбран.")
 
@@ -34,7 +33,6 @@ async def cmd_weather(message: Message):
     city = await choice_storage.get_city(message.from_user.id)
     if city == "":
         await message.reply("Город не выбран.\n Выберите его с помощью /city\n Пример: /city Москва")
-        await state.set_state(WeatherStates.waiting_date)
         return 
     response = await mal_client.get_weather(city)
     if response['cod'] == 200:
